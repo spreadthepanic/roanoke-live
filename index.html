@@ -701,9 +701,9 @@ function render() {
     // Action area
     const action = card.querySelector('.event-action');
     if (iHave) {
-      action.innerHTML = '<div class="going-badge">&#127903; You're going!</div>';
+      action.innerHTML = '<div class="going-badge">&#127903; You&#39;re going!</div>';
     } else {
-      const btns = [['yes',"I'm in! 🎶"],['maybe','Maybe 🤔'],['no',"Can't go"]]
+      const btns = [['yes',"I&#39;m in! 🎶"],['maybe','Maybe 🤔'],['no',"Can&#39;t go"]]
         .map(([v, l]) =>
           `<button class="rsvp-btn ${rsvp === v ? 'sel-' + v : ''}"
             onclick="saveRsvp('${key.replace(/'/g, "\'")}','${v}')">${l}</button>`)
@@ -718,7 +718,7 @@ function render() {
     totalTickets + ' with tickets secured';
   const rsvpEl = document.getElementById('stat-rsvp');
   if (rsvpYes > 0) {
-    rsvpEl.innerHTML = '&#10003; ' + rsvpYes + ' you're attending';
+    rsvpEl.innerHTML = '&#10003; ' + rsvpYes + ' you&#39;re attending';
     rsvpEl.style.display = '';
   } else {
     rsvpEl.style.display = 'none';
