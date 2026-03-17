@@ -1176,7 +1176,7 @@ function render() {
     // Action area — use safeId to avoid apostrophe issues in onclick
     const action = card.querySelector('.event-action');
     if (e.isSoftball) {
-      action.innerHTML = '<div class="going-badge">🥎 Daisy's game</div>';
+      action.innerHTML = '<div class="going-badge">🥎 Daisy&#39;s game</div>';
     } else if (iHave) {
       action.innerHTML = '<div class="going-badge">&#127903; You&#39;re going!</div>';
     } else {
