@@ -118,6 +118,7 @@
       <span style="flex:1"></span>
       <button id="tickets-btn" onclick="toggleTickets()">&#127903; Tickets only</button>
       <button id="softball-btn" onclick="toggleSoftball()">🥎 PH JV Softball</button>
+      <button id="comets-btn" onclick="toggleComets()">⚾ Comets Softball</button>
     </div>
   </div>
 </div>
@@ -1127,6 +1128,7 @@ let currentPerson = 'karla';
 let currentVenue  = 'All Venues';
 let ticketsOnly   = false;
 let softballOnly  = false;
+let cometsOnly    = false;
 let rsvps         = {};
 
 function loadRsvps() {
@@ -1171,17 +1173,28 @@ function setVenue(v) {
 
 function toggleTickets() {
   ticketsOnly = !ticketsOnly;
-  if (ticketsOnly) softballOnly = false;
+  if (ticketsOnly) { softballOnly = false; cometsOnly = false; }
   document.getElementById('tickets-btn').classList.toggle('active', ticketsOnly);
   document.getElementById('softball-btn').classList.remove('active');
+  document.getElementById('comets-btn').classList.remove('active');
   render();
 }
 
 function toggleSoftball() {
   softballOnly = !softballOnly;
-  if (softballOnly) ticketsOnly = false;
+  if (softballOnly) { ticketsOnly = false; cometsOnly = false; }
   document.getElementById('softball-btn').classList.toggle('active', softballOnly);
   document.getElementById('tickets-btn').classList.remove('active');
+  document.getElementById('comets-btn').classList.remove('active');
+  render();
+}
+
+function toggleComets() {
+  cometsOnly = !cometsOnly;
+  if (cometsOnly) { ticketsOnly = false; softballOnly = false; }
+  document.getElementById('comets-btn').classList.toggle('active', cometsOnly);
+  document.getElementById('tickets-btn').classList.remove('active');
+  document.getElementById('softball-btn').classList.remove('active');
   render();
 }
 
@@ -1219,7 +1232,8 @@ function render() {
 
     const visible = (currentVenue === 'All Venues' || e.venue === currentVenue)
                  && (!ticketsOnly || e[currentPerson])
-                 && (!softballOnly || e.isSoftball || e.isComets);
+                 && (!softballOnly || e.isSoftball)
+                 && (!cometsOnly   || e.isComets);
     card.style.display = visible ? '' : 'none';
     if (!visible) return;
     shown++;
