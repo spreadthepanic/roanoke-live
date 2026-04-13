@@ -74,6 +74,13 @@
     padding: 2px 8px; border-radius: 10px; letter-spacing: 0.08em;
     text-transform: uppercase; vertical-align: middle; margin-left: 8px;
   }
+  .event.comets { background: #08132a; border-color: #0d2a5a; border-left-color: #1d4ed8; }
+  .event.comets.this-week { background: #0a1a38 !important; border-color: #1a3a70 !important; border-left-color: #2563eb !important; }
+  .comets-badge {
+    font-size: 10px; background: #1d4ed820; color: #60a5fa;
+    padding: 2px 8px; border-radius: 10px; letter-spacing: 0.08em;
+    text-transform: uppercase; vertical-align: middle; margin-left: 8px;
+  }
   .this-week-badge {
     font-size: 10px; background: #22c55e20; color: #22c55e;
     padding: 2px 8px; border-radius: 10px; letter-spacing: 0.08em;
@@ -122,17 +129,18 @@
     <button class="small venue-btn" data-venue="Berglund" onclick="setVenue('Berglund')">Berglund</button>
     <button class="small venue-btn" data-venue="Caesars Virginia" onclick="setVenue('Caesars Virginia')">Caesars Virginia</button>
     <button class="small venue-btn" data-venue="Cave Spring High School" onclick="setVenue('Cave Spring High School')">Cave Spring High School</button>
-    <button class="small venue-btn" data-venue="Chapel Hill, NC" onclick="setVenue('Chapel Hill, NC')">Chapel Hill, NC</button>
     <button class="small venue-btn" data-venue="Charlotte, NC" onclick="setVenue('Charlotte, NC')">Charlotte, NC</button>
-    <button class="small venue-btn" data-venue="Christiansburg High School" onclick="setVenue('Christiansburg High School')">Christiansburg High School</button>
+    <button class="small venue-btn" data-venue="Craig County Field of Dreams" onclick="setVenue('Craig County Field of Dreams')">Craig County Field of Dreams</button>
     <button class="small venue-btn" data-venue="Dog Bowl" onclick="setVenue('Dog Bowl')">Dog Bowl</button>
     <button class="small venue-btn" data-venue="Dr Pepper Park" onclick="setVenue('Dr Pepper Park')">Dr Pepper Park</button>
     <button class="small venue-btn" data-venue="Elmwood Park" onclick="setVenue('Elmwood Park')">Elmwood Park</button>
     <button class="small venue-btn" data-venue="Festival Park" onclick="setVenue('Festival Park')">Festival Park</button>
+    <button class="small venue-btn" data-venue="Franklin County Park" onclick="setVenue('Franklin County Park')">Franklin County Park</button>
     <button class="small venue-btn" data-venue="Garrett Farms" onclick="setVenue('Garrett Farms')">Garrett Farms</button>
     <button class="small venue-btn" data-venue="Glenvar High School" onclick="setVenue('Glenvar High School')">Glenvar High School</button>
     <button class="small venue-btn" data-venue="Grandin Chillage" onclick="setVenue('Grandin Chillage')">Grandin Chillage</button>
     <button class="small venue-btn" data-venue="Grandin Theater" onclick="setVenue('Grandin Theater')">Grandin Theater</button>
+    <button class="small venue-btn" data-venue="Greenfield ES" onclick="setVenue('Greenfield ES')">Greenfield ES</button>
     <button class="small venue-btn" data-venue="Harvester" onclick="setVenue('Harvester')">Harvester</button>
     <button class="small venue-btn" data-venue="Hidden Valley High School" onclick="setVenue('Hidden Valley High School')">Hidden Valley High School</button>
     <button class="small venue-btn" data-venue="Jefferson Center" onclick="setVenue('Jefferson Center')">Jefferson Center</button>
@@ -141,12 +149,12 @@
     <button class="small venue-btn" data-venue="Parkway" onclick="setVenue('Parkway')">Parkway</button>
     <button class="small venue-btn" data-venue="Patrick Henry High School" onclick="setVenue('Patrick Henry High School')">Patrick Henry High School</button>
     <button class="small venue-btn" data-venue="Pulaski County High School" onclick="setVenue('Pulaski County High School')">Pulaski County High School</button>
+    <button class="small venue-btn" data-venue="Rivers Edge" onclick="setVenue('Rivers Edge')">Rivers Edge</button>
     <button class="small venue-btn" data-venue="Salem CC" onclick="setVenue('Salem CC')">Salem CC</button>
+    <button class="small venue-btn" data-venue="Salem Civic Center" onclick="setVenue('Salem Civic Center')">Salem Civic Center</button>
     <button class="small venue-btn" data-venue="Salem High School" onclick="setVenue('Salem High School')">Salem High School</button>
-    <button class="small venue-btn" data-venue="Spot on Kirk" onclick="setVenue('Spot on Kirk')">Spot on Kirk</button>
     <button class="small venue-btn" data-venue="The Coves" onclick="setVenue('The Coves')">The Coves</button>
     <button class="small venue-btn" data-venue="The Exchange" onclick="setVenue('The Exchange')">The Exchange</button>
-    <button class="small venue-btn" data-venue="Unknown" onclick="setVenue('Unknown')">Unknown</button>
     <button class="small venue-btn" data-venue="Vienna, VA" onclick="setVenue('Vienna, VA')">Vienna, VA</button>
     <button class="small venue-btn" data-venue="Wilderness Adventure" onclick="setVenue('Wilderness Adventure')">Wilderness Adventure</button>
     <button class="small venue-btn" data-venue="William Fleming High School" onclick="setVenue('William Fleming High School')">William Fleming High School</button>
@@ -163,118 +171,6 @@
 </div>
 
 <div id="events">
-  <div class="event softball" id="card_2026_03_27_PH_JV_vs__William_Fleming">
-    <div class="event-date">Fri, Mar 27</div>
-    <div class="event-info">
-      <div class="event-band"><strong>PH JV vs. William Fleming</strong><span class="softball-badge">🥎 Daisy's game</span></div>
-      <div class="event-meta">📍 Patrick Henry High School<span class="event-meta-extra"></span></div>
-    </div>
-    <div class="event-action"></div>
-  </div>
-  <div class="event" id="card_2026_03_28_Phat_Anchovies">
-    <div class="event-date">Sat, Mar 28</div>
-    <div class="event-info">
-      <div class="event-band"><strong>Phat Anchovies</strong></div>
-      <div class="event-meta"><a href="https://parkwaybrewing.com/the-tasting-room/calendar/" target="_blank" rel="noopener">📍 Parkway</a><span class="event-meta-extra"></span></div>
-    </div>
-    <div class="event-action"></div>
-  </div>
-  <div class="event" id="card_2026_03_29_Larry_Keel">
-    <div class="event-date">Sun, Mar 29</div>
-    <div class="event-info">
-      <div class="event-band"><strong>Larry Keel</strong></div>
-      <div class="event-meta"><a href="https://www.thespotonkirk.org/shows" target="_blank" rel="noopener">📍 Spot on Kirk</a><span class="event-meta-extra"></span></div>
-    </div>
-    <div class="event-action"></div>
-  </div>
-  <div class="event" id="card_2026_04_03_Disco_Diner">
-    <div class="event-date">Fri, Apr 3</div>
-    <div class="event-info">
-      <div class="event-band"><strong>Disco Diner</strong></div>
-      <div class="event-meta"><a href="https://www.5pointsmusic.com/events/live-events/" target="_blank" rel="noopener">📍 5 Points</a><span class="event-meta-extra"></span></div>
-    </div>
-    <div class="event-action"></div>
-  </div>
-  <div class="event" id="card_2026_04_06_Dogs_in_a_Pile">
-    <div class="event-date">Mon, Apr 6</div>
-    <div class="event-info">
-      <div class="event-band"><strong>Dogs in a Pile</strong></div>
-      <div class="event-meta"><a href="https://www.5pointsmusic.com/events/live-events/" target="_blank" rel="noopener">📍 5 Points</a><span class="event-meta-extra"></span></div>
-    </div>
-    <div class="event-action"></div>
-  </div>
-  <div class="event" id="card_2026_04_07_Dogs_in_a_Pile">
-    <div class="event-date">Tue, Apr 7</div>
-    <div class="event-info">
-      <div class="event-band"><strong>Dogs in a Pile</strong></div>
-      <div class="event-meta"><a href="https://www.5pointsmusic.com/events/live-events/" target="_blank" rel="noopener">📍 5 Points</a><span class="event-meta-extra"></span></div>
-    </div>
-    <div class="event-action"></div>
-  </div>
-  <div class="event softball" id="card_2026_04_07_PH_JV_vs__Cave_Spring">
-    <div class="event-date">Tue, Apr 7</div>
-    <div class="event-info">
-      <div class="event-band"><strong>PH JV vs. Cave Spring</strong><span class="softball-badge">🥎 Daisy's game</span></div>
-      <div class="event-meta">📍 Patrick Henry High School<span class="event-meta-extra"></span></div>
-    </div>
-    <div class="event-action"></div>
-  </div>
-  <div class="event" id="card_2026_04_08_Swamp_Flower">
-    <div class="event-date">Wed, Apr 8</div>
-    <div class="event-info">
-      <div class="event-band"><strong>Swamp Flower</strong></div>
-      <div class="event-meta"><a href="https://www.martinsdowntown.com/live-music" target="_blank" rel="noopener">📍 Martin's</a><span class="event-meta-extra"></span></div>
-    </div>
-    <div class="event-action"></div>
-  </div>
-  <div class="event softball" id="card_2026_04_08_PH_JV___Christiansburg">
-    <div class="event-date">Wed, Apr 8</div>
-    <div class="event-info">
-      <div class="event-band"><strong>PH JV @ Christiansburg</strong><span class="softball-badge">🥎 Daisy's game</span></div>
-      <div class="event-meta">📍 Christiansburg High School<span class="event-meta-extra"></span></div>
-    </div>
-    <div class="event-action"></div>
-  </div>
-  <div class="event" id="card_2026_04_11_Ambassador">
-    <div class="event-date">Sat, Apr 11</div>
-    <div class="event-info">
-      <div class="event-band"><strong>Ambassador</strong></div>
-      <div class="event-meta"><a href="https://www.martinsdowntown.com/live-music" target="_blank" rel="noopener">📍 Martin's</a><span class="event-meta-extra"></span></div>
-    </div>
-    <div class="event-action"></div>
-  </div>
-  <div class="event" id="card_2026_04_11_Collective_Soul">
-    <div class="event-date">Sat, Apr 11</div>
-    <div class="event-info">
-      <div class="event-band"><strong>Collective Soul</strong></div>
-      <div class="event-meta">📍 Caesars Virginia<span class="event-meta-extra"></span></div>
-    </div>
-    <div class="event-action"></div>
-  </div>
-  <div class="event" id="card_2026_04_11_BananaBall">
-    <div class="event-date">Sat, Apr 11</div>
-    <div class="event-info">
-      <div class="event-band"><strong>BananaBall</strong><span class="ticket-badge">tickets secured</span></div>
-      <div class="event-meta">📍 Chapel Hill, NC<span class="event-meta-extra"></span></div>
-    </div>
-    <div class="event-action"></div>
-  </div>
-  <div class="event" id="card_2026_04_11_Comets___Opening_Day">
-    <div class="event-date">Sat, Apr 11</div>
-    <div class="event-info">
-      <div class="event-band"><strong>Comets - Opening Day</strong><span class="ticket-badge">tickets secured</span></div>
-      <div class="event-meta">📍 Unknown<span class="event-meta-extra"></span></div>
-    </div>
-    <div class="event-action"></div>
-  </div>
-  <div class="event" id="card_2026_04_14_Little_Feat">
-    <div class="event-date">Tue, Apr 14</div>
-    <div class="event-info">
-      <div class="event-band"><strong>Little Feat</strong></div>
-      <div class="event-meta"><a href="https://www.jeffcenter.org/events" target="_blank" rel="noopener">📍 Jefferson Center</a><span class="event-meta-extra"></span></div>
-    </div>
-    <div class="event-action"></div>
-  </div>
   <div class="event softball" id="card_2026_04_14_PH_JV_vs__Hidden_Valley">
     <div class="event-date">Tue, Apr 14</div>
     <div class="event-info">
@@ -296,14 +192,6 @@
     <div class="event-info">
       <div class="event-band"><strong>William Shatner</strong><span class="ticket-badge">tickets secured</span></div>
       <div class="event-meta"><a href="https://berglundcenter.live/events" target="_blank" rel="noopener">📍 Berglund</a><span class="event-meta-extra"></span></div>
-    </div>
-    <div class="event-action"></div>
-  </div>
-  <div class="event" id="card_2026_04_16_Oliver_Wood">
-    <div class="event-date">Thu, Apr 16</div>
-    <div class="event-info">
-      <div class="event-band"><strong>Oliver Wood</strong></div>
-      <div class="event-meta"><a href="https://www.thespotonkirk.org/shows" target="_blank" rel="noopener">📍 Spot on Kirk</a><span class="event-meta-extra"></span></div>
     </div>
     <div class="event-action"></div>
   </div>
@@ -363,11 +251,43 @@
     </div>
     <div class="event-action"></div>
   </div>
+  <div class="event" id="card_2026_04_19_COMETS___Opening_Day">
+    <div class="event-date">Sun, Apr 19</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS - Opening Day</strong></div>
+      <div class="event-meta">📍 Rivers Edge<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
+  <div class="event comets" id="card_2026_04_19_COMETS___Opening_Day">
+    <div class="event-date">Sun, Apr 19</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS - Opening Day</strong><span class="comets-badge">⚾ Comets game</span></div>
+      <div class="event-meta">📍 Rivers Edge<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
   <div class="event softball" id="card_2026_04_20_PH_JV_vs__Glenvar">
     <div class="event-date">Mon, Apr 20</div>
     <div class="event-info">
       <div class="event-band"><strong>PH JV vs. Glenvar</strong><span class="softball-badge">🥎 Daisy's game</span></div>
       <div class="event-meta">📍 Patrick Henry High School<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
+  <div class="event" id="card_2026_04_20_COMETS_vs__Bot_Combs">
+    <div class="event-date">Mon, Apr 20</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS vs. Bot Combs</strong></div>
+      <div class="event-meta">📍 Rivers Edge<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
+  <div class="event comets" id="card_2026_04_20_COMETS_vs__Bot_Combs">
+    <div class="event-date">Mon, Apr 20</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS vs. Bot Combs</strong><span class="comets-badge">⚾ Comets game</span></div>
+      <div class="event-meta">📍 Rivers Edge<span class="event-meta-extra"></span></div>
     </div>
     <div class="event-action"></div>
   </div>
@@ -427,6 +347,22 @@
     </div>
     <div class="event-action"></div>
   </div>
+  <div class="event" id="card_2026_04_25_COMETS___CC_Stover">
+    <div class="event-date">Sat, Apr 25</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS @ CC Stover</strong></div>
+      <div class="event-meta">📍 Craig County Field of Dreams<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
+  <div class="event comets" id="card_2026_04_25_COMETS___CC_Stover">
+    <div class="event-date">Sat, Apr 25</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS @ CC Stover</strong><span class="comets-badge">⚾ Comets game</span></div>
+      <div class="event-meta">📍 Craig County Field of Dreams<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
   <div class="event" id="card_2026_04_27_Clue">
     <div class="event-date">Mon, Apr 27</div>
     <div class="event-info">
@@ -464,6 +400,22 @@
     <div class="event-info">
       <div class="event-band"><strong>Dueling Pianos</strong></div>
       <div class="event-meta"><a href="https://www.grandintheatre.com/shows?tag=Live%20Music" target="_blank" rel="noopener">📍 Grandin Theater</a><span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
+  <div class="event" id="card_2026_04_29_COMETS_vs__Clifton_Hostetter">
+    <div class="event-date">Wed, Apr 29</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS vs. Clifton Hostetter</strong></div>
+      <div class="event-meta">📍 Rivers Edge<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
+  <div class="event comets" id="card_2026_04_29_COMETS_vs__Clifton_Hostetter">
+    <div class="event-date">Wed, Apr 29</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS vs. Clifton Hostetter</strong><span class="comets-badge">⚾ Comets game</span></div>
+      <div class="event-meta">📍 Rivers Edge<span class="event-meta-extra"></span></div>
     </div>
     <div class="event-action"></div>
   </div>
@@ -515,6 +467,22 @@
     </div>
     <div class="event-action"></div>
   </div>
+  <div class="event" id="card_2026_05_02_COMETS___Bot_Winfield">
+    <div class="event-date">Sat, May 2</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS @ Bot Winfield</strong></div>
+      <div class="event-meta">📍 Greenfield ES<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
+  <div class="event comets" id="card_2026_05_02_COMETS___Bot_Winfield">
+    <div class="event-date">Sat, May 2</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS @ Bot Winfield</strong><span class="comets-badge">⚾ Comets game</span></div>
+      <div class="event-meta">📍 Greenfield ES<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
   <div class="event softball" id="card_2026_05_05_PH_JV_vs__Pulaski_County">
     <div class="event-date">Tue, May 5</div>
     <div class="event-info">
@@ -536,6 +504,22 @@
     <div class="event-info">
       <div class="event-band"><strong>Jay Leno</strong></div>
       <div class="event-meta"><a href="https://www.harvester-music.com/" target="_blank" rel="noopener">📍 Harvester</a><span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
+  <div class="event" id="card_2026_05_07_COMETS___FC_Mattox">
+    <div class="event-date">Thu, May 7</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS @ FC Mattox</strong></div>
+      <div class="event-meta">📍 Franklin County Park<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
+  <div class="event comets" id="card_2026_05_07_COMETS___FC_Mattox">
+    <div class="event-date">Thu, May 7</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS @ FC Mattox</strong><span class="comets-badge">⚾ Comets game</span></div>
+      <div class="event-meta">📍 Franklin County Park<span class="event-meta-extra"></span></div>
     </div>
     <div class="event-action"></div>
   </div>
@@ -579,6 +563,22 @@
     </div>
     <div class="event-action"></div>
   </div>
+  <div class="event" id="card_2026_05_09_COMETS_vs__GSA_Taylor">
+    <div class="event-date">Sat, May 9</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS vs. GSA Taylor</strong></div>
+      <div class="event-meta">📍 Rivers Edge<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
+  <div class="event comets" id="card_2026_05_09_COMETS_vs__GSA_Taylor">
+    <div class="event-date">Sat, May 9</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS vs. GSA Taylor</strong><span class="comets-badge">⚾ Comets game</span></div>
+      <div class="event-meta">📍 Rivers Edge<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
   <div class="event" id="card_2026_05_12_Black_Label_Society___Zakk_Sabbath___Dark_Chapel">
     <div class="event-date">Tue, May 12</div>
     <div class="event-info">
@@ -592,6 +592,22 @@
     <div class="event-info">
       <div class="event-band"><strong>PH JV @ Salem</strong><span class="softball-badge">🥎 Daisy's game</span></div>
       <div class="event-meta">📍 Patrick Henry High School<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
+  <div class="event" id="card_2026_05_13_COMETS_vs__Salem_Bordewisch">
+    <div class="event-date">Wed, May 13</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS vs. Salem Bordewisch</strong></div>
+      <div class="event-meta">📍 Rivers Edge<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
+  <div class="event comets" id="card_2026_05_13_COMETS_vs__Salem_Bordewisch">
+    <div class="event-date">Wed, May 13</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS vs. Salem Bordewisch</strong><span class="comets-badge">⚾ Comets game</span></div>
+      <div class="event-meta">📍 Rivers Edge<span class="event-meta-extra"></span></div>
     </div>
     <div class="event-action"></div>
   </div>
@@ -619,11 +635,43 @@
     </div>
     <div class="event-action"></div>
   </div>
+  <div class="event" id="card_2026_05_16_COMETS___Salem_Bratton">
+    <div class="event-date">Sat, May 16</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS @ Salem Bratton</strong></div>
+      <div class="event-meta">📍 Salem Civic Center<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
+  <div class="event comets" id="card_2026_05_16_COMETS___Salem_Bratton">
+    <div class="event-date">Sat, May 16</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS @ Salem Bratton</strong><span class="comets-badge">⚾ Comets game</span></div>
+      <div class="event-meta">📍 Salem Civic Center<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
   <div class="event" id="card_2026_05_17_Camp_Reckoning">
     <div class="event-date">Sun, May 17</div>
     <div class="event-info">
       <div class="event-band"><strong>Camp Reckoning</strong></div>
       <div class="event-meta">📍 Wilderness Adventure<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
+  <div class="event" id="card_2026_05_18_COMETS_vs__FC_Anderson">
+    <div class="event-date">Mon, May 18</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS vs. FC Anderson</strong></div>
+      <div class="event-meta">📍 Rivers Edge<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
+  <div class="event comets" id="card_2026_05_18_COMETS_vs__FC_Anderson">
+    <div class="event-date">Mon, May 18</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS vs. FC Anderson</strong><span class="comets-badge">⚾ Comets game</span></div>
+      <div class="event-meta">📍 Rivers Edge<span class="event-meta-extra"></span></div>
     </div>
     <div class="event-action"></div>
   </div>
@@ -667,6 +715,22 @@
     </div>
     <div class="event-action"></div>
   </div>
+  <div class="event" id="card_2026_05_28_COMETS___FC_Altice">
+    <div class="event-date">Thu, May 28</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS @ FC Altice</strong></div>
+      <div class="event-meta">📍 Franklin County Park<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
+  <div class="event comets" id="card_2026_05_28_COMETS___FC_Altice">
+    <div class="event-date">Thu, May 28</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS @ FC Altice</strong><span class="comets-badge">⚾ Comets game</span></div>
+      <div class="event-meta">📍 Franklin County Park<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
   <div class="event" id="card_2026_05_29_Half_Moon">
     <div class="event-date">Fri, May 29</div>
     <div class="event-info">
@@ -696,6 +760,38 @@
     <div class="event-info">
       <div class="event-band"><strong>Phat Anchovies</strong></div>
       <div class="event-meta"><a href="https://www.martinsdowntown.com/live-music" target="_blank" rel="noopener">📍 Martin's</a><span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
+  <div class="event" id="card_2026_05_30_COMETS_vs__SCSL_Dean">
+    <div class="event-date">Sat, May 30</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS vs. SCSL Dean</strong></div>
+      <div class="event-meta">📍 Rivers Edge<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
+  <div class="event comets" id="card_2026_05_30_COMETS_vs__SCSL_Dean">
+    <div class="event-date">Sat, May 30</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS vs. SCSL Dean</strong><span class="comets-badge">⚾ Comets game</span></div>
+      <div class="event-meta">📍 Rivers Edge<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
+  <div class="event" id="card_2026_06_02_COMETS___FC_Ransome">
+    <div class="event-date">Tue, Jun 2</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS @ FC Ransome</strong></div>
+      <div class="event-meta">📍 Franklin County Park<span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
+  <div class="event comets" id="card_2026_06_02_COMETS___FC_Ransome">
+    <div class="event-date">Tue, Jun 2</div>
+    <div class="event-info">
+      <div class="event-band"><strong>COMETS @ FC Ransome</strong><span class="comets-badge">⚾ Comets game</span></div>
+      <div class="event-meta">📍 Franklin County Park<span class="event-meta-extra"></span></div>
     </div>
     <div class="event-action"></div>
   </div>
@@ -832,6 +928,14 @@
     <div class="event-info">
       <div class="event-band"><strong>Billy Strings</strong><span class="ticket-badge">tickets secured</span></div>
       <div class="event-meta"><a href="https://berglundcenter.live/events" target="_blank" rel="noopener">📍 Berglund</a><span class="event-meta-extra"></span></div>
+    </div>
+    <div class="event-action"></div>
+  </div>
+  <div class="event" id="card_2026_07_17_Umphrey_s_McGee">
+    <div class="event-date">Fri, Jul 17</div>
+    <div class="event-info">
+      <div class="event-band"><strong>Umphrey's McGee</strong></div>
+      <div class="event-meta">📍 The Exchange<span class="event-meta-extra"></span></div>
     </div>
     <div class="event-action"></div>
   </div>
@@ -1014,10 +1118,10 @@
   <div id="empty">No shows match this filter.</div>
 </div>
 
-<footer>Curated by Dave &middot; Roanoke live music &middot; Updated March 27, 2026</footer>
+<footer>Curated by Dave &middot; Roanoke live music &middot; Updated April 13, 2026</footer>
 
 <script>
-const EVENTS = [{"date": "2026-03-27", "dateDisplay": "Fri, Mar 27", "band": "PH JV vs. William Fleming", "venue": "Patrick Henry High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true}, {"date": "2026-03-28", "dateDisplay": "Sat, Mar 28", "band": "Phat Anchovies", "venue": "Parkway", "venueUrl": "https://parkwaybrewing.com/the-tasting-room/calendar/", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-03-29", "dateDisplay": "Sun, Mar 29", "band": "Larry Keel", "venue": "Spot on Kirk", "venueUrl": "https://www.thespotonkirk.org/shows", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-04-03", "dateDisplay": "Fri, Apr 3", "band": "Disco Diner", "venue": "5 Points", "venueUrl": "https://www.5pointsmusic.com/events/live-events/", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-04-06", "dateDisplay": "Mon, Apr 6", "band": "Dogs in a Pile", "venue": "5 Points", "venueUrl": "https://www.5pointsmusic.com/events/live-events/", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-04-07", "dateDisplay": "Tue, Apr 7", "band": "Dogs in a Pile", "venue": "5 Points", "venueUrl": "https://www.5pointsmusic.com/events/live-events/", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-04-07", "dateDisplay": "Tue, Apr 7", "band": "PH JV vs. Cave Spring", "venue": "Patrick Henry High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true}, {"date": "2026-04-08", "dateDisplay": "Wed, Apr 8", "band": "Swamp Flower", "venue": "Martin's", "venueUrl": "https://www.martinsdowntown.com/live-music", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-04-08", "dateDisplay": "Wed, Apr 8", "band": "PH JV @ Christiansburg", "venue": "Christiansburg High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true}, {"date": "2026-04-11", "dateDisplay": "Sat, Apr 11", "band": "Ambassador", "venue": "Martin's", "venueUrl": "https://www.martinsdowntown.com/live-music", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-04-11", "dateDisplay": "Sat, Apr 11", "band": "Collective Soul", "venue": "Caesars Virginia", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-04-11", "dateDisplay": "Sat, Apr 11", "band": "BananaBall", "venue": "Chapel Hill, NC", "venueUrl": "", "dave": true, "karla": true, "daisy": true, "isSoftball": false}, {"date": "2026-04-11", "dateDisplay": "Sat, Apr 11", "band": "Comets - Opening Day", "venue": "Unknown", "venueUrl": "", "dave": true, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-04-14", "dateDisplay": "Tue, Apr 14", "band": "Little Feat", "venue": "Jefferson Center", "venueUrl": "https://www.jeffcenter.org/events", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-04-14", "dateDisplay": "Tue, Apr 14", "band": "PH JV vs. Hidden Valley", "venue": "Patrick Henry High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true}, {"date": "2026-04-15", "dateDisplay": "Wed, Apr 15", "band": "PH JV @ Glenvar", "venue": "Glenvar High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true}, {"date": "2026-04-16", "dateDisplay": "Thu, Apr 16", "band": "William Shatner", "venue": "Berglund", "venueUrl": "https://berglundcenter.live/events", "dave": true, "karla": true, "daisy": false, "isSoftball": false}, {"date": "2026-04-16", "dateDisplay": "Thu, Apr 16", "band": "Oliver Wood", "venue": "Spot on Kirk", "venueUrl": "https://www.thespotonkirk.org/shows", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-04-17", "dateDisplay": "Fri, Apr 17", "band": "Carbon Leaf", "venue": "5 Points", "venueUrl": "https://www.5pointsmusic.com/events/live-events/", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-04-17", "dateDisplay": "Fri, Apr 17", "band": "Talking Cake", "venue": "Martin's", "venueUrl": "https://www.martinsdowntown.com/live-music", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-04-17", "dateDisplay": "Fri, Apr 17", "band": "Empty Bottles", "venue": "Parkway", "venueUrl": "https://parkwaybrewing.com/the-tasting-room/calendar/", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-04-17", "dateDisplay": "Fri, Apr 17", "band": "PH JV @ Salem", "venue": "Salem High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true}, {"date": "2026-04-18", "dateDisplay": "Sat, Apr 18", "band": "Caitlin Krisko & The Broadcast", "venue": "5 Points", "venueUrl": "https://www.5pointsmusic.com/events/live-events/", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-04-18", "dateDisplay": "Sat, Apr 18", "band": "Galactic", "venue": "Elmwood Park", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-04-18", "dateDisplay": "Sat, Apr 18", "band": "Los Lobos", "venue": "Caesars Virginia", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-04-20", "dateDisplay": "Mon, Apr 20", "band": "PH JV vs. Glenvar", "venue": "Patrick Henry High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true}, {"date": "2026-04-21", "dateDisplay": "Tue, Apr 21", "band": "Melissa Etheridge", "venue": "Harvester", "venueUrl": "https://www.harvester-music.com/", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-04-22", "dateDisplay": "Wed, Apr 22", "band": "PH JV vs. James River", "venue": "Patrick Henry High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true}, {"date": "2026-04-24", "dateDisplay": "Fri, Apr 24", "band": "The Big Debbies", "venue": "Grandin Chillage", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-04-24", "dateDisplay": "Fri, Apr 24", "band": "The Floorboards", "venue": "Parkway", "venueUrl": "https://parkwaybrewing.com/the-tasting-room/calendar/", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-04-24", "dateDisplay": "Fri, Apr 24", "band": "Styx", "venue": "Caesars Virginia", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-04-24", "dateDisplay": "Fri, Apr 24", "band": "PH JV vs. Blacksburg", "venue": "Patrick Henry High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true}, {"date": "2026-04-25", "dateDisplay": "Sat, Apr 25", "band": "Wynton Marsalis & Jazz at Lincoln Center Orch.", "venue": "Jefferson Center", "venueUrl": "https://www.jeffcenter.org/events", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-04-27", "dateDisplay": "Mon, Apr 27", "band": "Clue", "venue": "Berglund", "venueUrl": "https://berglundcenter.live/events", "dave": true, "karla": true, "daisy": true, "isSoftball": false}, {"date": "2026-04-27", "dateDisplay": "Mon, Apr 27", "band": "Lake Street Dive", "venue": "Harvester", "venueUrl": "https://www.harvester-music.com/", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-04-28", "dateDisplay": "Tue, Apr 28", "band": "PH JV vs. Christiansburg", "venue": "Patrick Henry High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true}, {"date": "2026-04-29", "dateDisplay": "Wed, Apr 29", "band": "PH JV @ William Fleming", "venue": "William Fleming High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true}, {"date": "2026-04-29", "dateDisplay": "Wed, Apr 29", "band": "Dueling Pianos", "venue": "Grandin Theater", "venueUrl": "https://www.grandintheatre.com/shows?tag=Live%20Music", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-05-01", "dateDisplay": "Fri, May 1", "band": "Larry Keel Duo", "venue": "Martin's", "venueUrl": "https://www.martinsdowntown.com/live-music", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-05-01", "dateDisplay": "Fri, May 1", "band": "The Ambassador and the Chosen Few", "venue": "Parkway", "venueUrl": "https://parkwaybrewing.com/the-tasting-room/calendar/", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-05-01", "dateDisplay": "Fri, May 1", "band": "PH JV @ Cave Spring", "venue": "Cave Spring High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true}, {"date": "2026-05-02", "dateDisplay": "Sat, May 2", "band": "Ben Folds", "venue": "Harvester", "venueUrl": "https://www.harvester-music.com/", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-05-02", "dateDisplay": "Sat, May 2", "band": "The Wailers", "venue": "The Exchange", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-05-02", "dateDisplay": "Sat, May 2", "band": "Chatham County Line", "venue": "Dog Bowl", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-05-05", "dateDisplay": "Tue, May 5", "band": "PH JV vs. Pulaski County", "venue": "Patrick Henry High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true}, {"date": "2026-05-06", "dateDisplay": "Wed, May 6", "band": "Foster Burton", "venue": "Parkway", "venueUrl": "https://parkwaybrewing.com/the-tasting-room/calendar/", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-05-06", "dateDisplay": "Wed, May 6", "band": "Jay Leno", "venue": "Harvester", "venueUrl": "https://www.harvester-music.com/", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-05-08", "dateDisplay": "Fri, May 8", "band": "Everclear w/ Marcy Playground", "venue": "Lynchburg Amphitheater", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-05-08", "dateDisplay": "Fri, May 8", "band": "PH JV @ Hidden Valley", "venue": "Hidden Valley High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true}, {"date": "2026-05-09", "dateDisplay": "Sat, May 9", "band": "Larry the Cable Guy", "venue": "Salem CC", "venueUrl": "https://www.salemciviccenter.com/calendar.aspx?CID=26", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-05-09", "dateDisplay": "Sat, May 9", "band": "The Darkside Experience", "venue": "5 Points", "venueUrl": "https://www.5pointsmusic.com/events/live-events/", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-05-09", "dateDisplay": "Sat, May 9", "band": "Ripejive", "venue": "Parkway", "venueUrl": "https://parkwaybrewing.com/the-tasting-room/calendar/", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-05-12", "dateDisplay": "Tue, May 12", "band": "Black Label Society / Zakk Sabbath / Dark Chapel", "venue": "Salem CC", "venueUrl": "https://www.salemciviccenter.com/calendar.aspx?CID=26", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-05-12", "dateDisplay": "Tue, May 12", "band": "PH JV @ Salem", "venue": "Patrick Henry High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true}, {"date": "2026-05-14", "dateDisplay": "Thu, May 14", "band": "Jackyl & Buckcherry", "venue": "Salem CC", "venueUrl": "https://www.salemciviccenter.com/calendar.aspx?CID=26", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-05-15", "dateDisplay": "Fri, May 15", "band": "Camp Reckoning", "venue": "Wilderness Adventure", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-05-16", "dateDisplay": "Sat, May 16", "band": "Camp Reckoning", "venue": "Wilderness Adventure", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-05-17", "dateDisplay": "Sun, May 17", "band": "Camp Reckoning", "venue": "Wilderness Adventure", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-05-19", "dateDisplay": "Tue, May 19", "band": "PH JV @ Pulaski", "venue": "Pulaski County High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true}, {"date": "2026-05-19", "dateDisplay": "Tue, May 19", "band": "Dark Star Orchestra", "venue": "Elmwood Park", "venueUrl": "", "dave": true, "karla": true, "daisy": true, "isSoftball": false}, {"date": "2026-05-21", "dateDisplay": "Thu, May 21", "band": "Steve Hofstetter", "venue": "Grandin Theater", "venueUrl": "https://www.grandintheatre.com/shows?tag=Live%20Music", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-05-22", "dateDisplay": "Fri, May 22", "band": "Chicago", "venue": "Caesars Virginia", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-05-26", "dateDisplay": "Tue, May 26", "band": "Buckethead", "venue": "5 Points", "venueUrl": "https://www.5pointsmusic.com/events/live-events/", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-05-29", "dateDisplay": "Fri, May 29", "band": "Half Moon", "venue": "Grandin Chillage", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-05-29", "dateDisplay": "Fri, May 29", "band": "Big Something - w/ Fungkshui", "venue": "5 Points", "venueUrl": "https://www.5pointsmusic.com/events/live-events/", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-05-30", "dateDisplay": "Sat, May 30", "band": "Big Something - w/ Ranford Almond", "venue": "5 Points", "venueUrl": "https://www.5pointsmusic.com/events/live-events/", "dave": true, "karla": true, "daisy": false, "isSoftball": false}, {"date": "2026-05-30", "dateDisplay": "Sat, May 30", "band": "Phat Anchovies", "venue": "Martin's", "venueUrl": "https://www.martinsdowntown.com/live-music", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-06-03", "dateDisplay": "Wed, Jun 3", "band": "Tom Hamilton", "venue": "5 Points", "venueUrl": "https://www.5pointsmusic.com/events/live-events/", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-06-03", "dateDisplay": "Wed, Jun 3", "band": "Foster Burton", "venue": "Parkway", "venueUrl": "https://parkwaybrewing.com/the-tasting-room/calendar/", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-06-04", "dateDisplay": "Thu, Jun 4", "band": "Journey", "venue": "Berglund", "venueUrl": "https://berglundcenter.live/events", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-06-06", "dateDisplay": "Sat, Jun 6", "band": "Same As It Ever Was (Talking Heads)", "venue": "Dog Bowl", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-06-10", "dateDisplay": "Wed, Jun 10", "band": "Mrs. Doubtfire", "venue": "Berglund", "venueUrl": "https://berglundcenter.live/events", "dave": true, "karla": true, "daisy": true, "isSoftball": false}, {"date": "2026-06-12", "dateDisplay": "Fri, Jun 12", "band": "NokeFest", "venue": "Garrett Farms", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-06-13", "dateDisplay": "Sat, Jun 13", "band": "NokeFest", "venue": "Garrett Farms", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-06-14", "dateDisplay": "Sun, Jun 14", "band": "NokeFest", "venue": "Garrett Farms", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-06-19", "dateDisplay": "Fri, Jun 19", "band": "Steve Earle", "venue": "The Coves", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-06-24", "dateDisplay": "Wed, Jun 24", "band": "The Darkside Experience", "venue": "Grandin Theater", "venueUrl": "https://www.grandintheatre.com/shows?tag=Live%20Music", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-06-26", "dateDisplay": "Fri, Jun 26", "band": "Talking Cake", "venue": "Grandin Chillage", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-07-03", "dateDisplay": "Fri, Jul 3", "band": "Molly Tuttle", "venue": "The Coves", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-07-03", "dateDisplay": "Fri, Jul 3", "band": "Broken Hearts (Tom Petty Tribute)", "venue": "Dr Pepper Park", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-07-04", "dateDisplay": "Sat, Jul 4", "band": "Molly Tuttle", "venue": "The Coves", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-07-11", "dateDisplay": "Sat, Jul 11", "band": "Warrant", "venue": "Dr Pepper Park", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-07-11", "dateDisplay": "Sat, Jul 11", "band": "Steep Canyon Rangers", "venue": "Dog Bowl", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-07-14", "dateDisplay": "Tue, Jul 14", "band": "Billy Strings", "venue": "Berglund", "venueUrl": "https://berglundcenter.live/events", "dave": true, "karla": true, "daisy": true, "isSoftball": false}, {"date": "2026-07-18", "dateDisplay": "Sat, Jul 18", "band": "Rumours", "venue": "Dr Pepper Park", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-07-22", "dateDisplay": "Wed, Jul 22", "band": "FloydFest", "venue": "Festival Park", "venueUrl": "", "dave": true, "karla": true, "daisy": true, "isSoftball": false}, {"date": "2026-07-23", "dateDisplay": "Thu, Jul 23", "band": "FloydFest", "venue": "Festival Park", "venueUrl": "", "dave": true, "karla": true, "daisy": true, "isSoftball": false}, {"date": "2026-07-24", "dateDisplay": "Fri, Jul 24", "band": "FloydFest", "venue": "Festival Park", "venueUrl": "", "dave": true, "karla": true, "daisy": true, "isSoftball": false}, {"date": "2026-07-25", "dateDisplay": "Sat, Jul 25", "band": "FloydFest", "venue": "Festival Park", "venueUrl": "", "dave": true, "karla": true, "daisy": true, "isSoftball": false}, {"date": "2026-07-26", "dateDisplay": "Sun, Jul 26", "band": "FloydFest", "venue": "Festival Park", "venueUrl": "", "dave": true, "karla": true, "daisy": true, "isSoftball": false}, {"date": "2026-07-31", "dateDisplay": "Fri, Jul 31", "band": "Surrender Dorothy", "venue": "Grandin Chillage", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-08-01", "dateDisplay": "Sat, Aug 1", "band": "Jason Isbell and the 400 Unit", "venue": "Berglund", "venueUrl": "https://berglundcenter.live/events", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-08-21", "dateDisplay": "Fri, Aug 21", "band": "WAFest", "venue": "Wilderness Adventure", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-08-22", "dateDisplay": "Sat, Aug 22", "band": "WAFest", "venue": "Wilderness Adventure", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-08-23", "dateDisplay": "Sun, Aug 23", "band": "WAFest", "venue": "Wilderness Adventure", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-08-28", "dateDisplay": "Fri, Aug 28", "band": "Dead Reckoning", "venue": "Grandin Chillage", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-09-04", "dateDisplay": "Fri, Sep 4", "band": "The Marshall Tucker Band", "venue": "The Coves", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-09-15", "dateDisplay": "Tue, Sep 15", "band": "John Fogerty & Steve Winwood", "venue": "Vienna, VA", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-09-16", "dateDisplay": "Wed, Sep 16", "band": "John Fogerty & Steve Winwood", "venue": "Charlotte, NC", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-09-23", "dateDisplay": "Wed, Sep 23", "band": "Foreigner", "venue": "Salem CC", "venueUrl": "https://www.salemciviccenter.com/calendar.aspx?CID=26", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-09-25", "dateDisplay": "Fri, Sep 25", "band": "Ben Trout Band", "venue": "Grandin Chillage", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-10-03", "dateDisplay": "Sat, Oct 3", "band": "Skydog (Allman Bros. Tribute)", "venue": "Dog Bowl", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-10-07", "dateDisplay": "Wed, Oct 7", "band": "Weird Al Yankovich", "venue": "Salem CC", "venueUrl": "https://www.salemciviccenter.com/calendar.aspx?CID=26", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-10-13", "dateDisplay": "Tue, Oct 13", "band": "Trampled By Turtles", "venue": "The Coves", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-10-24", "dateDisplay": "Sat, Oct 24", "band": "Chillagefest", "venue": "Grandin Chillage", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false}, {"date": "2026-11-20", "dateDisplay": "Fri, Nov 20", "band": "Labyrinth", "venue": "Berglund", "venueUrl": "https://berglundcenter.live/events", "dave": true, "karla": true, "daisy": true, "isSoftball": false}];
+const EVENTS = [{"date": "2026-04-14", "dateDisplay": "Tue, Apr 14", "band": "PH JV vs. Hidden Valley", "venue": "Patrick Henry High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true, "isComets": false}, {"date": "2026-04-15", "dateDisplay": "Wed, Apr 15", "band": "PH JV @ Glenvar", "venue": "Glenvar High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true, "isComets": false}, {"date": "2026-04-16", "dateDisplay": "Thu, Apr 16", "band": "William Shatner", "venue": "Berglund", "venueUrl": "https://berglundcenter.live/events", "dave": true, "karla": true, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-04-17", "dateDisplay": "Fri, Apr 17", "band": "Carbon Leaf", "venue": "5 Points", "venueUrl": "https://www.5pointsmusic.com/events/live-events/", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-04-17", "dateDisplay": "Fri, Apr 17", "band": "Talking Cake", "venue": "Martin's", "venueUrl": "https://www.martinsdowntown.com/live-music", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-04-17", "dateDisplay": "Fri, Apr 17", "band": "Empty Bottles", "venue": "Parkway", "venueUrl": "https://parkwaybrewing.com/the-tasting-room/calendar/", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-04-17", "dateDisplay": "Fri, Apr 17", "band": "PH JV @ Salem", "venue": "Salem High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true, "isComets": false}, {"date": "2026-04-18", "dateDisplay": "Sat, Apr 18", "band": "Caitlin Krisko & The Broadcast", "venue": "5 Points", "venueUrl": "https://www.5pointsmusic.com/events/live-events/", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-04-18", "dateDisplay": "Sat, Apr 18", "band": "Galactic", "venue": "Elmwood Park", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-04-18", "dateDisplay": "Sat, Apr 18", "band": "Los Lobos", "venue": "Caesars Virginia", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-04-19", "dateDisplay": "Sun, Apr 19", "band": "COMETS - Opening Day", "venue": "Rivers Edge", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-04-19", "dateDisplay": "Sun, Apr 19", "band": "COMETS - Opening Day", "venue": "Rivers Edge", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": true}, {"date": "2026-04-20", "dateDisplay": "Mon, Apr 20", "band": "PH JV vs. Glenvar", "venue": "Patrick Henry High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true, "isComets": false}, {"date": "2026-04-20", "dateDisplay": "Mon, Apr 20", "band": "COMETS vs. Bot Combs", "venue": "Rivers Edge", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-04-20", "dateDisplay": "Mon, Apr 20", "band": "COMETS vs. Bot Combs", "venue": "Rivers Edge", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": true}, {"date": "2026-04-21", "dateDisplay": "Tue, Apr 21", "band": "Melissa Etheridge", "venue": "Harvester", "venueUrl": "https://www.harvester-music.com/", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-04-22", "dateDisplay": "Wed, Apr 22", "band": "PH JV vs. James River", "venue": "Patrick Henry High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true, "isComets": false}, {"date": "2026-04-24", "dateDisplay": "Fri, Apr 24", "band": "The Big Debbies", "venue": "Grandin Chillage", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-04-24", "dateDisplay": "Fri, Apr 24", "band": "The Floorboards", "venue": "Parkway", "venueUrl": "https://parkwaybrewing.com/the-tasting-room/calendar/", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-04-24", "dateDisplay": "Fri, Apr 24", "band": "Styx", "venue": "Caesars Virginia", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-04-24", "dateDisplay": "Fri, Apr 24", "band": "PH JV vs. Blacksburg", "venue": "Patrick Henry High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true, "isComets": false}, {"date": "2026-04-25", "dateDisplay": "Sat, Apr 25", "band": "Wynton Marsalis & Jazz at Lincoln Center Orch.", "venue": "Jefferson Center", "venueUrl": "https://www.jeffcenter.org/events", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-04-25", "dateDisplay": "Sat, Apr 25", "band": "COMETS @ CC Stover", "venue": "Craig County Field of Dreams", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-04-25", "dateDisplay": "Sat, Apr 25", "band": "COMETS @ CC Stover", "venue": "Craig County Field of Dreams", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": true}, {"date": "2026-04-27", "dateDisplay": "Mon, Apr 27", "band": "Clue", "venue": "Berglund", "venueUrl": "https://berglundcenter.live/events", "dave": true, "karla": true, "daisy": true, "isSoftball": false, "isComets": false}, {"date": "2026-04-27", "dateDisplay": "Mon, Apr 27", "band": "Lake Street Dive", "venue": "Harvester", "venueUrl": "https://www.harvester-music.com/", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-04-28", "dateDisplay": "Tue, Apr 28", "band": "PH JV vs. Christiansburg", "venue": "Patrick Henry High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true, "isComets": false}, {"date": "2026-04-29", "dateDisplay": "Wed, Apr 29", "band": "PH JV @ William Fleming", "venue": "William Fleming High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true, "isComets": false}, {"date": "2026-04-29", "dateDisplay": "Wed, Apr 29", "band": "Dueling Pianos", "venue": "Grandin Theater", "venueUrl": "https://www.grandintheatre.com/shows?tag=Live%20Music", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-04-29", "dateDisplay": "Wed, Apr 29", "band": "COMETS vs. Clifton Hostetter", "venue": "Rivers Edge", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-04-29", "dateDisplay": "Wed, Apr 29", "band": "COMETS vs. Clifton Hostetter", "venue": "Rivers Edge", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": true}, {"date": "2026-05-01", "dateDisplay": "Fri, May 1", "band": "Larry Keel Duo", "venue": "Martin's", "venueUrl": "https://www.martinsdowntown.com/live-music", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-01", "dateDisplay": "Fri, May 1", "band": "The Ambassador and the Chosen Few", "venue": "Parkway", "venueUrl": "https://parkwaybrewing.com/the-tasting-room/calendar/", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-01", "dateDisplay": "Fri, May 1", "band": "PH JV @ Cave Spring", "venue": "Cave Spring High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true, "isComets": false}, {"date": "2026-05-02", "dateDisplay": "Sat, May 2", "band": "Ben Folds", "venue": "Harvester", "venueUrl": "https://www.harvester-music.com/", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-02", "dateDisplay": "Sat, May 2", "band": "The Wailers", "venue": "The Exchange", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-02", "dateDisplay": "Sat, May 2", "band": "Chatham County Line", "venue": "Dog Bowl", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-02", "dateDisplay": "Sat, May 2", "band": "COMETS @ Bot Winfield", "venue": "Greenfield ES", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-02", "dateDisplay": "Sat, May 2", "band": "COMETS @ Bot Winfield", "venue": "Greenfield ES", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": true}, {"date": "2026-05-05", "dateDisplay": "Tue, May 5", "band": "PH JV vs. Pulaski County", "venue": "Patrick Henry High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true, "isComets": false}, {"date": "2026-05-06", "dateDisplay": "Wed, May 6", "band": "Foster Burton", "venue": "Parkway", "venueUrl": "https://parkwaybrewing.com/the-tasting-room/calendar/", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-06", "dateDisplay": "Wed, May 6", "band": "Jay Leno", "venue": "Harvester", "venueUrl": "https://www.harvester-music.com/", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-07", "dateDisplay": "Thu, May 7", "band": "COMETS @ FC Mattox", "venue": "Franklin County Park", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-07", "dateDisplay": "Thu, May 7", "band": "COMETS @ FC Mattox", "venue": "Franklin County Park", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": true}, {"date": "2026-05-08", "dateDisplay": "Fri, May 8", "band": "Everclear w/ Marcy Playground", "venue": "Lynchburg Amphitheater", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-08", "dateDisplay": "Fri, May 8", "band": "PH JV @ Hidden Valley", "venue": "Hidden Valley High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true, "isComets": false}, {"date": "2026-05-09", "dateDisplay": "Sat, May 9", "band": "Larry the Cable Guy", "venue": "Salem CC", "venueUrl": "https://www.salemciviccenter.com/calendar.aspx?CID=26", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-09", "dateDisplay": "Sat, May 9", "band": "The Darkside Experience", "venue": "5 Points", "venueUrl": "https://www.5pointsmusic.com/events/live-events/", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-09", "dateDisplay": "Sat, May 9", "band": "Ripejive", "venue": "Parkway", "venueUrl": "https://parkwaybrewing.com/the-tasting-room/calendar/", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-09", "dateDisplay": "Sat, May 9", "band": "COMETS vs. GSA Taylor", "venue": "Rivers Edge", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-09", "dateDisplay": "Sat, May 9", "band": "COMETS vs. GSA Taylor", "venue": "Rivers Edge", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": true}, {"date": "2026-05-12", "dateDisplay": "Tue, May 12", "band": "Black Label Society / Zakk Sabbath / Dark Chapel", "venue": "Salem CC", "venueUrl": "https://www.salemciviccenter.com/calendar.aspx?CID=26", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-12", "dateDisplay": "Tue, May 12", "band": "PH JV @ Salem", "venue": "Patrick Henry High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true, "isComets": false}, {"date": "2026-05-13", "dateDisplay": "Wed, May 13", "band": "COMETS vs. Salem Bordewisch", "venue": "Rivers Edge", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-13", "dateDisplay": "Wed, May 13", "band": "COMETS vs. Salem Bordewisch", "venue": "Rivers Edge", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": true}, {"date": "2026-05-14", "dateDisplay": "Thu, May 14", "band": "Jackyl & Buckcherry", "venue": "Salem CC", "venueUrl": "https://www.salemciviccenter.com/calendar.aspx?CID=26", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-15", "dateDisplay": "Fri, May 15", "band": "Camp Reckoning", "venue": "Wilderness Adventure", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-16", "dateDisplay": "Sat, May 16", "band": "Camp Reckoning", "venue": "Wilderness Adventure", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-16", "dateDisplay": "Sat, May 16", "band": "COMETS @ Salem Bratton", "venue": "Salem Civic Center", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-16", "dateDisplay": "Sat, May 16", "band": "COMETS @ Salem Bratton", "venue": "Salem Civic Center", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": true}, {"date": "2026-05-17", "dateDisplay": "Sun, May 17", "band": "Camp Reckoning", "venue": "Wilderness Adventure", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-18", "dateDisplay": "Mon, May 18", "band": "COMETS vs. FC Anderson", "venue": "Rivers Edge", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-18", "dateDisplay": "Mon, May 18", "band": "COMETS vs. FC Anderson", "venue": "Rivers Edge", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": true}, {"date": "2026-05-19", "dateDisplay": "Tue, May 19", "band": "PH JV @ Pulaski", "venue": "Pulaski County High School", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": true, "isComets": false}, {"date": "2026-05-19", "dateDisplay": "Tue, May 19", "band": "Dark Star Orchestra", "venue": "Elmwood Park", "venueUrl": "", "dave": true, "karla": true, "daisy": true, "isSoftball": false, "isComets": false}, {"date": "2026-05-21", "dateDisplay": "Thu, May 21", "band": "Steve Hofstetter", "venue": "Grandin Theater", "venueUrl": "https://www.grandintheatre.com/shows?tag=Live%20Music", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-22", "dateDisplay": "Fri, May 22", "band": "Chicago", "venue": "Caesars Virginia", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-26", "dateDisplay": "Tue, May 26", "band": "Buckethead", "venue": "5 Points", "venueUrl": "https://www.5pointsmusic.com/events/live-events/", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-28", "dateDisplay": "Thu, May 28", "band": "COMETS @ FC Altice", "venue": "Franklin County Park", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-28", "dateDisplay": "Thu, May 28", "band": "COMETS @ FC Altice", "venue": "Franklin County Park", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": true}, {"date": "2026-05-29", "dateDisplay": "Fri, May 29", "band": "Half Moon", "venue": "Grandin Chillage", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-29", "dateDisplay": "Fri, May 29", "band": "Big Something - w/ Fungkshui", "venue": "5 Points", "venueUrl": "https://www.5pointsmusic.com/events/live-events/", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-30", "dateDisplay": "Sat, May 30", "band": "Big Something - w/ Ranford Almond", "venue": "5 Points", "venueUrl": "https://www.5pointsmusic.com/events/live-events/", "dave": true, "karla": true, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-30", "dateDisplay": "Sat, May 30", "band": "Phat Anchovies", "venue": "Martin's", "venueUrl": "https://www.martinsdowntown.com/live-music", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-30", "dateDisplay": "Sat, May 30", "band": "COMETS vs. SCSL Dean", "venue": "Rivers Edge", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-05-30", "dateDisplay": "Sat, May 30", "band": "COMETS vs. SCSL Dean", "venue": "Rivers Edge", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": true}, {"date": "2026-06-02", "dateDisplay": "Tue, Jun 2", "band": "COMETS @ FC Ransome", "venue": "Franklin County Park", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-06-02", "dateDisplay": "Tue, Jun 2", "band": "COMETS @ FC Ransome", "venue": "Franklin County Park", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": true}, {"date": "2026-06-03", "dateDisplay": "Wed, Jun 3", "band": "Tom Hamilton", "venue": "5 Points", "venueUrl": "https://www.5pointsmusic.com/events/live-events/", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-06-03", "dateDisplay": "Wed, Jun 3", "band": "Foster Burton", "venue": "Parkway", "venueUrl": "https://parkwaybrewing.com/the-tasting-room/calendar/", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-06-04", "dateDisplay": "Thu, Jun 4", "band": "Journey", "venue": "Berglund", "venueUrl": "https://berglundcenter.live/events", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-06-06", "dateDisplay": "Sat, Jun 6", "band": "Same As It Ever Was (Talking Heads)", "venue": "Dog Bowl", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-06-10", "dateDisplay": "Wed, Jun 10", "band": "Mrs. Doubtfire", "venue": "Berglund", "venueUrl": "https://berglundcenter.live/events", "dave": true, "karla": true, "daisy": true, "isSoftball": false, "isComets": false}, {"date": "2026-06-12", "dateDisplay": "Fri, Jun 12", "band": "NokeFest", "venue": "Garrett Farms", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-06-13", "dateDisplay": "Sat, Jun 13", "band": "NokeFest", "venue": "Garrett Farms", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-06-14", "dateDisplay": "Sun, Jun 14", "band": "NokeFest", "venue": "Garrett Farms", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-06-19", "dateDisplay": "Fri, Jun 19", "band": "Steve Earle", "venue": "The Coves", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-06-24", "dateDisplay": "Wed, Jun 24", "band": "The Darkside Experience", "venue": "Grandin Theater", "venueUrl": "https://www.grandintheatre.com/shows?tag=Live%20Music", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-06-26", "dateDisplay": "Fri, Jun 26", "band": "Talking Cake", "venue": "Grandin Chillage", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-07-03", "dateDisplay": "Fri, Jul 3", "band": "Molly Tuttle", "venue": "The Coves", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-07-03", "dateDisplay": "Fri, Jul 3", "band": "Broken Hearts (Tom Petty Tribute)", "venue": "Dr Pepper Park", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-07-04", "dateDisplay": "Sat, Jul 4", "band": "Molly Tuttle", "venue": "The Coves", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-07-11", "dateDisplay": "Sat, Jul 11", "band": "Warrant", "venue": "Dr Pepper Park", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-07-11", "dateDisplay": "Sat, Jul 11", "band": "Steep Canyon Rangers", "venue": "Dog Bowl", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-07-14", "dateDisplay": "Tue, Jul 14", "band": "Billy Strings", "venue": "Berglund", "venueUrl": "https://berglundcenter.live/events", "dave": true, "karla": true, "daisy": true, "isSoftball": false, "isComets": false}, {"date": "2026-07-17", "dateDisplay": "Fri, Jul 17", "band": "Umphrey's McGee", "venue": "The Exchange", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-07-18", "dateDisplay": "Sat, Jul 18", "band": "Rumours", "venue": "Dr Pepper Park", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-07-22", "dateDisplay": "Wed, Jul 22", "band": "FloydFest", "venue": "Festival Park", "venueUrl": "", "dave": true, "karla": true, "daisy": true, "isSoftball": false, "isComets": false}, {"date": "2026-07-23", "dateDisplay": "Thu, Jul 23", "band": "FloydFest", "venue": "Festival Park", "venueUrl": "", "dave": true, "karla": true, "daisy": true, "isSoftball": false, "isComets": false}, {"date": "2026-07-24", "dateDisplay": "Fri, Jul 24", "band": "FloydFest", "venue": "Festival Park", "venueUrl": "", "dave": true, "karla": true, "daisy": true, "isSoftball": false, "isComets": false}, {"date": "2026-07-25", "dateDisplay": "Sat, Jul 25", "band": "FloydFest", "venue": "Festival Park", "venueUrl": "", "dave": true, "karla": true, "daisy": true, "isSoftball": false, "isComets": false}, {"date": "2026-07-26", "dateDisplay": "Sun, Jul 26", "band": "FloydFest", "venue": "Festival Park", "venueUrl": "", "dave": true, "karla": true, "daisy": true, "isSoftball": false, "isComets": false}, {"date": "2026-07-31", "dateDisplay": "Fri, Jul 31", "band": "Surrender Dorothy", "venue": "Grandin Chillage", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-08-01", "dateDisplay": "Sat, Aug 1", "band": "Jason Isbell and the 400 Unit", "venue": "Berglund", "venueUrl": "https://berglundcenter.live/events", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-08-21", "dateDisplay": "Fri, Aug 21", "band": "WAFest", "venue": "Wilderness Adventure", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-08-22", "dateDisplay": "Sat, Aug 22", "band": "WAFest", "venue": "Wilderness Adventure", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-08-23", "dateDisplay": "Sun, Aug 23", "band": "WAFest", "venue": "Wilderness Adventure", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-08-28", "dateDisplay": "Fri, Aug 28", "band": "Dead Reckoning", "venue": "Grandin Chillage", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-09-04", "dateDisplay": "Fri, Sep 4", "band": "The Marshall Tucker Band", "venue": "The Coves", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-09-15", "dateDisplay": "Tue, Sep 15", "band": "John Fogerty & Steve Winwood", "venue": "Vienna, VA", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-09-16", "dateDisplay": "Wed, Sep 16", "band": "John Fogerty & Steve Winwood", "venue": "Charlotte, NC", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-09-23", "dateDisplay": "Wed, Sep 23", "band": "Foreigner", "venue": "Salem CC", "venueUrl": "https://www.salemciviccenter.com/calendar.aspx?CID=26", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-09-25", "dateDisplay": "Fri, Sep 25", "band": "Ben Trout Band", "venue": "Grandin Chillage", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-10-03", "dateDisplay": "Sat, Oct 3", "band": "Skydog (Allman Bros. Tribute)", "venue": "Dog Bowl", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-10-07", "dateDisplay": "Wed, Oct 7", "band": "Weird Al Yankovich", "venue": "Salem CC", "venueUrl": "https://www.salemciviccenter.com/calendar.aspx?CID=26", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-10-13", "dateDisplay": "Tue, Oct 13", "band": "Trampled By Turtles", "venue": "The Coves", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-10-24", "dateDisplay": "Sat, Oct 24", "band": "Chillagefest", "venue": "Grandin Chillage", "venueUrl": "", "dave": false, "karla": false, "daisy": false, "isSoftball": false, "isComets": false}, {"date": "2026-11-20", "dateDisplay": "Fri, Nov 20", "band": "Labyrinth", "venue": "Berglund", "venueUrl": "https://berglundcenter.live/events", "dave": true, "karla": true, "daisy": true, "isSoftball": false, "isComets": false}];
 
 let currentPerson = 'karla';
 let currentVenue  = 'All Venues';
@@ -1115,7 +1219,7 @@ function render() {
 
     const visible = (currentVenue === 'All Venues' || e.venue === currentVenue)
                  && (!ticketsOnly || e[currentPerson])
-                 && (!softballOnly || e.isSoftball);
+                 && (!softballOnly || e.isSoftball || e.isComets);
     card.style.display = visible ? '' : 'none';
     if (!visible) return;
     shown++;
@@ -1128,7 +1232,8 @@ function render() {
 
     // Border + this-week class
     let cls = 'event';
-    if (e.isSoftball) cls += ' softball';
+    if (e.isComets) cls += ' comets';
+    else if (e.isSoftball) cls += ' softball';
     if (isThisWeek) cls += ' this-week';
     if (iHave) cls += ' has-ticket';
     else if (rsvp === 'yes') cls += ' rsvp-yes';
@@ -1155,7 +1260,9 @@ function render() {
 
     // Action area — use safeId to avoid apostrophe issues in onclick
     const action = card.querySelector('.event-action');
-    if (e.isSoftball) {
+    if (e.isComets) {
+      action.innerHTML = '<div class="going-badge" style="color:#60a5fa;background:#1d4ed815;border-color:#1d4ed833">⚾ Dave &amp; Karla coaching</div>';
+    } else if (e.isSoftball) {
       action.innerHTML = '<div class="going-badge">🥎 Daisy&#39;s game</div>';
     } else if (iHave) {
       action.innerHTML = '<div class="going-badge">&#127903; You&#39;re going!</div>';
